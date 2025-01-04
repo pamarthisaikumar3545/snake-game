@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yellowtail&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: url(../items/bg.jpg);
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#item {
+    margin: 0px 20px;
+}
+
+#board {
+    background: transparent;
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    gap: 1px;
+}
+
+.head {
+    background-color: green;
+    border: 2px solid black;
+    transform: scale(1.2);
+    border-radius: 9px;
+}
+
+.snake {
+    background-color: rgb(8, 5, 8);
+    border-radius: 12px;
+}
+
+.food {
+    background: black;
+    border: 0.25vmin solid black;
+}
+
+.maker {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 59vmin;
+    height: 92vmin;
+}
+
+.maker h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Yellowtail', cursive;
+    padding: 18px;
+    margin: 14px;
+    font-size: 42px;
+    background-color: rgba(72, 157, 236, 0.884);
+    border-radius: 22px;
+    box-shadow: inset 3px 5px green;
+    text-shadow: -3px -2px 2px rgb(185, 72, 72);
+}
+
+#scoreBox {
+    font-family: 'Bebas Neue', cursive;
+    padding: 18px;
+    margin: 14px;
+    font-size: 42px;
+    background-color: rgba(36, 196, 196, 0.884);
+    border-radius: 22px;
+    box-shadow: inset 3px 5px light black;
+}
+
+#highestScoreBox {
+    font-family: 'Bebas Neue', cursive;
+    padding: 18px;
+    margin: 14px;
+    font-size: 42px;
+    background-color: rgba(255, 0, 0, 0.884); /* Changed to red */
+    border-radius: 22px;
+    box-shadow: inset 3px 5px light black;
+}
+
+#extra {
+    padding: 18px;
+    margin: 14px;
+    font-size: 42px;
+    background-color: rgba(214, 230, 77, 0.884);
+    border-radius: 22px;
+    box-shadow: inset 3px 5px light black;
+}
